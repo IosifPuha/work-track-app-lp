@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
     <title>WorkTrack</title>
+        <!-- Aggiungi il CSS di Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
     <meta
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       name="viewport"
@@ -388,6 +390,10 @@
             var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
                 return new bootstrap.Tooltip(tooltipTriggerEl);
             });
+        });
+        // Inizializza i tooltips di Tippy.js dopo che il DOM è stato caricato
+        document.addEventListener('DOMContentLoaded', function() {
+            tippy('[data-tippy-content]');
         });
     </script>
   </body>
