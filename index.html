@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
-    <title>WorkTrackagain</title>
+    <title>WorkTrack</title>
     <meta
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       name="viewport"
@@ -381,11 +381,13 @@
     <script src="assets/js/awesome-landing-page.js"></script>
     <script>
         // inizializziamo i tooltips "globalmente"
-        var tooltipTriggerList = [].slice.call(
-            document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        );
-        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltipTriggerList = [].slice.call(
+                document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            );
+            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
         });
     </script>
   </body>
