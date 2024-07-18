@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
     <title>WorkTrack</title>
-        <!-- Aggiungi il CSS di Tippy.js -->
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+    <!-- Aggiungi il CSS di Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
     <meta
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       name="viewport"
@@ -16,7 +16,7 @@
     <link href="assets/css/landing-page.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
-   <script
+    <script
       src="https://kit.fontawesome.com/a95a5ca09c.js"
       crossorigin="anonymous"
     ></script>
@@ -27,9 +27,19 @@
     />
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
     <!-- PopUp Email Form -->
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f6cc05787a911db6592edf90a/df145bd5f427bbece8a88fd81.js");</script>
-
-
+    <script id="mcjs">
+      !(function (c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/f6cc05787a911db6592edf90a/df145bd5f427bbece8a88fd81.js"
+      );
+    </script>
   </head>
   <body class="landing-page landing-page1">
     <nav class="navbar navbar-transparent navbar-top" role="navigation">
@@ -87,23 +97,24 @@
                 <button
                   onclick="window.location.href='#info';"
                   class="btn btn-fill btn-neutral"
-
-                  
-                  data-tippy-content="soon!" data-tippy-placement="top"
+                  data-tippy-content="soon!"
+                  data-tippy-placement="top"
                 >
                   <i class="fa fa-apple"></i> App Store
                 </button>
                 <button
                   onclick="window.location.href='#info';"
-                  class="btn btn-simple btn-neutral" 
-                  data-tippy-content="soon!" data-tippy-placement="bottom"
+                  class="btn btn-simple btn-neutral"
+                  data-tippy-content="soon!"
+                  data-tippy-placement="bottom"
                 >
                   <i class="fa-brands fa-google-play"></i>
                 </button>
                 <button
                   onclick="window.location.href='#info';"
-                  class="btn btn-simple btn-neutral" 
-                  data-tippy-content="soon!" data-tippy-placement="bottom"
+                  class="btn btn-simple btn-neutral"
+                  data-tippy-content="soon!"
+                  data-tippy-placement="bottom"
                 >
                   <i class="fa fa-windows"></i>
                 </button>
@@ -167,16 +178,10 @@
               >
                 <div class="carousel-inner">
                   <div class="item">
-                    <img
-                      src="assets/img/1.png"
-                      alt="iPhoneMockUpWorkedToday"
-                    />
+                    <img src="assets/img/1.png" alt="iPhoneMockUpWorkedToday" />
                   </div>
                   <div class="item active">
-                    <img
-                      src="assets/img/2.png"
-                      alt="iPhoneMockUpStats"
-                    />
+                    <img src="assets/img/2.png" alt="iPhoneMockUpStats" />
                   </div>
                   <div class="item">
                     <img
@@ -185,10 +190,7 @@
                     />
                   </div>
                   <div class="item">
-                    <img
-                      src="assets/img/4.png"
-                      alt="iPhoneMockUpChangePay"
-                    />
+                    <img src="assets/img/4.png" alt="iPhoneMockUpChangePay" />
                   </div>
                 </div>
                 <ol class="carousel-indicators carousel-indicators-blue">
@@ -340,7 +342,11 @@
           <div class="info" id="info">
             <h1>Sign up for free!</h1>
             <p>Be the first one to download WorkTrack when it launches.</p>
-            <a href="https://mailchi.mp/84a76fe7e64a/worktrack-newsletter" class="btn btn-neutral btn-lg btn-fill">Sign me up!</a>
+            <a
+              href="https://mailchi.mp/84a76fe7e64a/worktrack-newsletter"
+              class="btn btn-neutral btn-lg btn-fill"
+              >Sign me up!</a
+            >
           </div>
         </div>
       </div>
@@ -384,9 +390,11 @@
     <script src="assets/js/bootstrap.js"></script>
     <!--landing page JS-->
     <script src="assets/js/awesome-landing-page.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
-        // inizializziamo i tooltips "globalmente"
-        /*
+      // inizializziamo i tooltips "globalmente"
+      /*
         document.addEventListener('DOMContentLoaded', function() {
             var tooltipTriggerList = [].slice.call(
                 document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -396,13 +404,10 @@
             });
         });
       */
-        <script src="https://unpkg.com/@popperjs/core@2"></script>
-        <script src="https://unpkg.com/tippy.js@6"></script>
-
-        // Inizializza i tooltips di Tippy.js dopo che il DOM è stato caricato
-        document.addEventListener('DOMContentLoaded', function() {
-            tippy('[data-tippy-content]');
-        });
+      // Inizializza i tooltips di Tippy.js dopo che il DOM è stato caricato
+      document.addEventListener("DOMContentLoaded", function () {
+        tippy("[data-tippy-content]");
+      });
     </script>
   </body>
 </html>
