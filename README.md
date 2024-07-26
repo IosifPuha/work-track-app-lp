@@ -1,4 +1,4 @@
 # work-track-app-lp
 Landing page for upcoming app WorkTrack
 
-![Side](https://github.com/user-attachments/assets/3d1af481-23d5-4eff-aa7d-921606f77343)
+![ScreenShowing](https://github.com/user-attachments/assets/7779ade3-800c-4366-951d-f87aaa57aeb1)
