@@ -1329,8 +1329,9 @@ i {
 }
 
 .landing-page .parallax .parallax-image img.phone {
-  width: 80%;
+  width: 68%;
   float: right;
+  margin-left: -100px;
 }
 
 .landing-page .parallax .parallax-background img.flipped {
@@ -1342,7 +1343,7 @@ i {
   -ms-filter: "FlipH";
 }
 
-.landing-page .parallax .parallax-image .screen {
+.landing-page .parallax .parallax-image .phone {
   position: absolute;
   z-index: 3;
 }
@@ -1848,6 +1849,27 @@ i {
   right: -9px;
 }
 
+@media (max-width: 991.9px) {
+  .col-md-5 .parallax-image .phone {
+    margin-top: 0px !important;
+    width: 38% !important;
+    margin-left: 10% !important;
+  }
+}
+
+@media (min-width: 767px) {
+  .wt-logo {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991.9px) and (min-width: 767px) {
+  .description h5 {
+    max-width: 420px; /* Modifica questa larghezza a seconda delle necessità */
+    word-wrap: break-word;
+  }
+}
+
 @media (max-width: 768px) {
   .fixed-plugin {
     top: 80px;
@@ -2019,11 +2041,13 @@ i {
     padding-top: 10px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 991.9px) {
   .iphoneRes {
     display: none;
+    /* width: 0px; */
   }
 }
+
 @media (max-width: 768px) {
   .brand {
     display: none;
